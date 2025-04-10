@@ -1,45 +1,52 @@
 <h1 align="center">♻️ Smart Recycling with AI 🤖</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AI-Recycling-brightgreen?style=for-the-badge&logo=python" alt="Badge">
+  <img src="https://img.shields.io/badge/Artificial%20Intelligence-Recycling-brightgreen?style=for-the-badge&logo=python" alt="Badge">
   <img src="https://img.shields.io/badge/Built%20with-TensorFlow-orange?style=for-the-badge&logo=tensorflow">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge">
 </p>
 
 <p align="center">
-  An intelligent and eco-friendly waste classification system powered by deep learning.<br>
-  Recycle smarter, greener, and faster — all with the help of AI.
+  An AI-powered, eco-friendly waste classification system.<br>
+  Designed for a smarter, greener, and more sustainable future.
 </p>
 
 ---
 
 ## 🌍 Why This Project?
 
-In Turkey, recycling rates are as low as **11.5%**, far behind EU countries.  
-At the same time, electricity demand is increasing rapidly, with an average daily consumption of **834,713 MWh**.
+Recycling rates in Turkey are currently around **11.5%**, far below the European average.  
+Meanwhile, the daily electricity consumption exceeds **834,713 MWh**.
 
-That’s why we built an **AI-powered smart recycling bin**:  
-✅ Automatically classifies waste using real-time image recognition  
-✅ Opens the correct bin compartment only  
-✅ Runs on solar energy for **eco-friendly operation**  
+That’s why we developed a **smart recycling bin powered by artificial intelligence**:  
+✅ Automatically classifies waste using image recognition  
+✅ Opens only the appropriate bin compartment  
+✅ Designed to run on **solar energy** for eco-friendly operation  
 
 ---
-
 ## 🧠 How It Works
 
-1. 📦 Loads and processes the **TrashNet** dataset
-2. 🧠 Trains a custom **CNN model** to classify: `plastic`, `metal`, `paper`, `cardboard`, `glass`
-3. 📷 Uses OpenCV to capture real-time waste images
-4. 🗑️ Detects the waste type and opens the appropriate bin compartment
+1. 📦 Loads and processes the **TrashNet** dataset  
+2. 🧠 Trains a CNN model for 5 categories: `plastic`, `metal`, `paper`, `cardboard`, `glass`  
+3. 📷 Captures real-time video using OpenCV  
+4. 🗑️ Classifies waste and opens the correct bin slot
+
+⚠️ **Note:** This project currently runs in a **computer-based environment**. Waste images are captured via a webcam and classified locally on the computer.
+
+In future development, the system will be upgraded into a **fully autonomous smart bin** with:
+
+- 📷 An embedded camera system  
+- ☀️ Solar-powered operation  
+
+making the project **sustainable, mobile, and hardware-integrated**.
 
 ---
 
 ## 📦 Dataset
 
-We used the [TrashNet Dataset](https://huggingface.co/datasets/garythung/trashnet), which contains 2527 labeled images.
+We used the [TrashNet Dataset](https://huggingface.co/datasets/garythung/trashnet), developed by Stanford University. It contains 2527 labeled images.
 
-To load the dataset:
-
+### To Load the Dataset:
 ```python
 from datasets import load_dataset
 
