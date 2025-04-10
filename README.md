@@ -25,16 +25,6 @@ That’s why we built an **AI-powered smart recycling bin**:
 
 ---
 
-## 📸 Demo Preview
-
-> *(You can add a gif or image here if available)*
-
-<p align="center">
-  <img src="assets/demo.gif" alt="Demo" width="600">
-</p>
-
----
-
 ## 🧠 How It Works
 
 1. 📦 Loads and processes the **TrashNet** dataset
